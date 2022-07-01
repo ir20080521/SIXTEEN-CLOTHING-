@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    background-image: url(https://images.unsplash.com/photo-1526894826544-0f81b0a5796d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+  }
+  header > main {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.577);
+    width: 100%;
+    height: 100%;
+  }
+  nav {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.822);
+    position: fixed;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+
+  }
+  
+  .nav_overlay {
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav_overlay > ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .nav_overlay > ul > li {
+    margin: 0 20px;
+    height: 20%;
+    transition: 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav_overlay > ul > li:hover {
+  
+    height: 100%;
+  }
+  .burger {
+    display: none;
+  }
+  .header_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .header_content > h4 {
+    color: #f33f3f;
+    margin-bottom: 1.5rem;
+  }
+  .header_content > h1 {
+    font-size: 3rem;
+    letter-spacing: 5px;
+  }
+
+.products_section{
+    margin: auto;
+    width: 80%;
+  
+    padding: 3rem 0;
+}
+.products_title{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(126, 126, 126);
+    align-items: center;
+    padding-bottom: 10px; 
+    margin-bottom: 2rem;
+
+}
+.products_container{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.products_container>article{
+    max-width: 350px;
+   
+    margin-bottom: 2rem;
+}
+.products_container>article>img{
+    width: 100%;
+}
+.product_info{
+    padding: 15px 10px;
+}
+
+.product_title{
+    align-items: center;
+    display: flex;
+    justify-content: space-between; 
+}
+.product_title>h2{
+    color: rgb(0, 0, 147);
+    font-weight: 700;
+
+}
+
+.product_title>p{
+    font-weight: 600;
+}
+.product_info>p{
+    margin: 9px 0;
+    color: grey;
+}
+.product_ranking{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f33f3f;
+}
+
+/*about section*/
+.about-section {
+  border-bottom: 1px solid rgb(126, 126, 126);
+  width: 80%;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+.about-section>h2 {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid gray;
+  }
+.about-container {
+  display: flex;
+  justify-content:space-between;
+  align-content: center;
+  padding:2rem 0;
+  }
+  .about-info {
+    width: 50%;
+  }
+  .about-info>p {
+    margin: 1rem 0;
+  }
+  .about-info>ul {
+    list-style-position: inside;
+  }
+  .about-info>ul>li {
+    padding: 0.2rem 0;
+  }
+.about-info>button {
+  all: unset;
+  margin-top: 2rem;
+  padding: 0.8rem;
+  background-color: #f33f3f;
+  color: white;
+  border-radius: 5px;
+}
+.about-image {
+  width: 50%;
+}
+.about-image>img {
+width: 100%;
+
+}
+/*about section*/
+
+/*banner section*/
+.banner-section {
+  width: 80%;
+  padding:2rem 0;
+  margin: auto;
+  border-bottom: 1px solid rgb(126, 126, 126);
+  }
+.banner {
+  background-color: rgba(199, 198, 198, 0.632);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.banner-info>p {
+  font-size: 13px;
+}
+.banner>button {
+  all: unset;
+  padding: 0.8rem 1.5rem;
+  background-color: #f33f3f;
+  border-radius: 5px;
+  color: white;
+}
+/*banner section*/
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+}
+  @media only screen and (max-width: 900px) {
+    .burger {
+      display: block;
+    }
+    .nav_overlay > ul {
+      display: none;
+    }
+    .products_container{
+        justify-content: center;
+    }
+    .products_title{
+        font-size: 14px;
+    }
+    .about-container {
+      flex-direction: column;
+    }
+    .about-container>div {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+.banner {
+  flex-direction: column;
+  align-items: center;
+}
+.banner>button {
+  margin-top: 1rem;
+}
+  }
